@@ -10,13 +10,15 @@ import {AppRoutingModule, routingComponents} from './app-routing-module';
 import {ReactiveFormsModule, FormsModule} from "@angular/forms";
 
 import { HttpClientModule } from "@angular/common/http";
+import { HeaderComponent } from './components/share/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    routingComponents
+    routingComponents,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
