@@ -16,6 +16,11 @@ export class ListasService {
   getAllList(): Observable<ListaReproduccionModel[]> {
     let dir = this.url + "lists";
     return this.http.get<ListaReproduccionModel[]>(dir);
-
   }
+
+  getSingleList(nombre:string):Observable<ListaReproduccionModel>{
+    let dir = this.url+"lists/"+nombre;
+    return this.http.get<ListaReproduccionModel>(dir);
+  }
+
 }
