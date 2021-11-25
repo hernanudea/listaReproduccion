@@ -7,6 +7,9 @@ import {FooterComponent} from './components/share/footer/footer.component';
 
 import {AppRoutingModule, routingComponents} from './app-routing-module';
 
+import {ReactiveFormsModule, FormsModule} from "@angular/forms";
+
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import {AppRoutingModule, routingComponents} from './app-routing-module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
